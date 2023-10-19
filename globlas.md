@@ -11,3 +11,18 @@ console.log(directorioActual);
 const archivoActual = __filename;
 console.log(archivoActual);
 ```
+
+# module y require
+
+```javascript
+// Creación de un módulo personalizado (saludo.js)
+module.exports = {
+  saludar: function() {
+    console.log('¡Hola desde el módulo!');
+  }
+};
+
+// Uso del módulo en otro archivo (main.js)
+const saludo = require('./saludo'); // Importar el módulo
+saludo.saludar(); // Llamar a la función del módulo
+```
