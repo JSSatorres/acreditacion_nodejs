@@ -1,4 +1,5 @@
 const os = require('node:os') 
+const { stdin, stdout } = require('node:process');
 
 console.log('userInfo', os.userInfo());
 console.log('Sistema operativo', os.platform());
@@ -15,3 +16,5 @@ console.table({
   freemem: os.freemem(),
   totalmem:os.totalmem()
 })
+
+
